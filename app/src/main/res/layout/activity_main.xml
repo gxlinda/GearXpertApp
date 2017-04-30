@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hu.gearxpert.gearxpertapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/matrix"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/matrix" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:src="@drawable/dragon" />
+
+            <TextView
+                android:id="@+id/gearxpert_ltd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="roboto"
+
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="GearXpert Ltd."
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:background="@drawable/bg2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="roboto"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Need unique softwares?"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="roboto"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:text="Want a new website?"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="roboto"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:text="Searching for IT solutions?"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="roboto"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:text="We are here to help!"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/matrix"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/support" />
+
+        <LinearLayout
+            android:id="@+id/linearWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bluecircle"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/web" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="roboto"
+                android:gravity="center_vertical"
+                android:text="Visit our website!\nwww.gearxpert.hu"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearWeb"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bluecircle"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="roboto"
+                android:gravity="center_vertical"
+                android:text="Have special needs? Write us!\ncontact@gearxpert.hu"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearEmail"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bluecircle"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="roboto"
+                android:gravity="center_vertical"
+                android:text="Let's make an appointment!\n+36 70 366 9170"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearPhone"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bluecircle"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/pin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="roboto"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="Here we are:\n3580 Tiszaújváros, Szent István Street 104/4., Hungary"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/matrix2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/linearMap"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/matrix" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearMap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="roboto"
+            android:padding="6dp"
+            android:text="GearXpert - Quality behind the code"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
